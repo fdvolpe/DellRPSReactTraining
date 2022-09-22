@@ -17,7 +17,7 @@ function Login(props){
     return(
 
         <>
-            <h1><p>Login</p></h1>
+            <h1>Login</h1>
             <hr/>           
             <textArea>{props.text}</textArea>
             <hr/>           
