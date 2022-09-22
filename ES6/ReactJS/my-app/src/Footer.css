@@ -1,0 +1,38 @@
+div {
+    background-color: aliceblue;
+    color: cornflowerblue;
+    font-family: fantasy;
+    border-style: outset;
+}
+
+.footer{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+#footerRightsLn1{
+    margin-left: 15px;
+    width: 100px;
+}
+
+#footerRightsLn2{
+    margin-left: 15px;
+    margin-top: 40px;
+    width: 100px;
+}
+
+#footerEmail{
+    margin-left: 70%;
+    text-align: right;
+}
+
+#footerLocation{
+    margin-left: 85%;
+}
+
+#footerSeparator{
+    margin-left: 75%;
+}
+
+
