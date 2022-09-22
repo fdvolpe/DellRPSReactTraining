@@ -1,0 +1,21 @@
+div {
+    background-color: aliceblue;
+    color: cornflowerblue;
+    font-family: fantasy;
+    border-style: outset;
+}
+
+h1, a, span {
+    margin-left: 20px;
+}
+
+img {
+    margin-left: 60px;
+    margin-top: 20px ;
+    margin-bottom: -76px;
+    width: 100px;
+}
+
+.navItem {
+    color: green;
+}
