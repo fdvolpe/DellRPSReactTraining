@@ -17,8 +17,13 @@ function Login(props){
     return(
 
         <>
+            <h1><p>Login</p></h1>
             <hr/>           
             <textArea>{props.text}</textArea>
+            <hr/>           
+            <textArea>{props.text}</textArea>
+            <hr/>
+            <button onClick={()=>onButtonClick()}>Enter</button>
         </>
     );
 }

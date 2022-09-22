@@ -10,7 +10,6 @@ import reportWebVitals from './reportWebVitals';
 import Button from './ClassComponent';
 import Clock from './TimeComponent';
 import Login from './Login'
-import LoginButton from './LoginButton'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const timeRoot = ReactDOM.createRoot(document.getElementById('clockRoot'));
@@ -23,8 +22,6 @@ root.render(
   <React.StrictMode>
     <Header />
     <Login id="1" text="admin"/>
-    <Login id="2" textpwd="pwd"/>
-    <LoginButton id="1"/>
     <Footer />
   </React.StrictMode>
 );
