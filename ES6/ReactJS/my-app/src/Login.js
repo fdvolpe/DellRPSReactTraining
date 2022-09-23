@@ -1,31 +1,23 @@
-function Login(props){
+import React, {Component} from 'react';
 
-    var LoginArray = [];
-    function onButtonClick(){
-        LoginArray.push(props.text);
-        console.log(LoginArray);
-        if((props.text) == "admin")
-        {
-            alert(`Login success!`);   
-        }else
-        {
-            alert(`Login failed!`);
-        }
-         
+class Login extends React.Component{
+
+    constructor(){
+        super();
+        this.state = {username: "admin", pwd: "nimda"};
     }
 
-    return(
-
-        <>
-            <h1>Login</h1>
-            <hr/>           
-            <textArea>{props.text}</textArea>
-            <hr/>           
-            <textArea>{props.text}</textArea>
-            <hr/>
-            <button onClick={()=>onButtonClick()}>Enter</button>
-        </>
-    );
+    render(){
+        return(
+            <>
+                <input type='text' placeholder='Enter username' value={this.state.username}/>
+                <br/>
+                <input type='password' placeholder='Enter password' value={this.state.pwd}/>
+                <br/>
+                <button onClick={()=>alert(`Login success for ${this.state.username}`)}>Login</button>
+            </>
+        )
+    }
 }
 
 export default Login;

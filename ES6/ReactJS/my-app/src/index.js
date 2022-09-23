@@ -21,7 +21,7 @@ timeRoot.render(
 root.render(
   <React.StrictMode>
     <Header />
-    <Login id="1" text="admin"/>
+    <Login preferences='nextPage=Dashboard'/>
     <Footer />
   </React.StrictMode>
 );
