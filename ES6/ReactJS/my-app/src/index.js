@@ -9,7 +9,9 @@ import Footer from './Footer';
 import reportWebVitals from './reportWebVitals';
 import Button from './ClassComponent';
 import Clock from './TimeComponent';
-import Login from './Login'
+import LoginV2 from './LoginV2ChangingValues';
+import LikeButton from './LikeButton';
+import Parent from './C2C';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const timeRoot = ReactDOM.createRoot(document.getElementById('clockRoot'));
@@ -21,7 +23,9 @@ timeRoot.render(
 root.render(
   <React.StrictMode>
     <Header />
-    <Login preferences='nextPage=Dashboard'/>
+    <LoginV2 />
+    <LikeButton/>
+    <Parent/>
     <Footer />
   </React.StrictMode>
 );
