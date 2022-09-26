@@ -12,6 +12,9 @@ import Clock from './TimeComponent';
 import LoginV2 from './LoginV2ChangingValues';
 import LikeButton from './LikeButton';
 import Parent from './C2C';
+import User from './usingHttp';
+import SignIn from './SignIn';
+import Container from './Container';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const timeRoot = ReactDOM.createRoot(document.getElementById('clockRoot'));
@@ -22,11 +25,14 @@ timeRoot.render(
 )
 root.render(
   <React.StrictMode>
-    <Header />
+    {/* <Header />
     <LoginV2 />
     <LikeButton/>
     <Parent/>
-    <Footer />
+    <User/>
+    <SignIn/>
+    <Footer /> */}
+    <Container/>
   </React.StrictMode>
 );
 
