@@ -3,15 +3,15 @@ import { connect } from 'react-redux';
 import { buyCake, buyIcecream } from './reduxActions/Actions';
 
 //Everithing in redux is converted to a prop in react component
-export function ActionComponent(props) {
+function ActionComponent(props) {
     return (
         <>
             <h2>Stock for cakes: {props.propCakeCount}</h2>
-            <button onClick={() => props.propBuyCake()}>Buy Cake</button>
+            <button onClick={()=>props.propBuyCake()}>Buy Cake</button>
 
             <hr />
             <h2>Stock for icecreams: {props.propIcecreamCount}</h2>
-            <button onClick={() => props.propBuyIcecream()}>Buy Icecream</button>
+            <button onClick={()=>props.propBuyIcecream()}>Buy Icecream</button>
         </>
     );
 }
@@ -27,8 +27,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 
     return{
-        propBuyCake: dispatch(buyCake()),
-        propBuyIcecream: dispatch(buyIcecream)
+        propBuyCake:()=>dispatch(buyCake()),
+        propBuyIcecream:()=>dispatch(buyIcecream())
     }
 
 }
