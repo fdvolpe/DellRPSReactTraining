@@ -6,8 +6,9 @@ import { buyCake, buyIcecream, buyGame } from './reduxActions/Actions';
 function ActionComponent(props) {
     return (
         <>
+            <h3>Menu</h3>
             <h2>Stock for cakes: {props.propCakeCount}</h2>
-            <button onClick={()=>props.propBuyCake()}>Buy Cake</button>
+            <button aria-label='button-name' onClick={()=>props.propBuyCake()}>Buy Cake</button>
 
             <hr />
             <h2>Stock for icecreams: {props.propIcecreamCount}</h2>
